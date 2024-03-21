@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mea Culpa Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <style>
+      .top_bar {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+      }
+      .split {
+        display: block;
+        background-color: rgb(231, 231, 231);
+        position: fixed;
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        height: 1px;
+      }
+      .split_body {
+        display: block;
+        background-color: rgb(231, 231, 231);
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        height: 1px;
+      }
+      .header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+      }  
+      .section_headline {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+        color:rgb(100, 100, 100);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section_basic_p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color:rgb(100, 100, 100);
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+      }
+      .categories_section {
+        display: block;
+        margin-top: 30px;
+      }
+      .bottom_signature {
+        font-family: Roboto;
+        font-size: 8px;
+        color:rgb(150, 150, 150);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @media screen and (max-width: 768px) {
+        .product_container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .header, .split, .top_bar {
+          zoom: 70%;
+        }
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body style="padding-top: 50px;">
+    <div class="top_bar"> <!--space to make split--> </div>
+    <div class="split"> <!--space to make split--> </div>
+    <div class="header" style="
+      display: flex; 
+      flex-direction: row;
+      margin-top: -30px;
+      justify-content: center;
+    ">
+      <div style="
+        display: flex; 
+        flex-direction: row;
+        margin-top: 30px;
+        justify-content: center;
+      ">
+        <div style="
+          flex: 1;
+        "> <!--space to make flex 1--> 
+        </div>
+        <div style="
+          width: 150px;
+        "> 
+          <img src="pictures/header/mca_header.PNG" style="width: 150px; height: 50px;"> 
+        </div>
+        <div style="
+          flex: 1;
+        "> <!--space to make flex 1--> </div>
+            <img src="pictures/logo/LOGO_ring_grey.PNG" style="position: fixed; right: 0px; top: 3px; height: 45px;" >
+      </div>
+    </div>
+
+    <div class="categories_section" style="height: 300px;">
+      <div class="section_headline" style="margin-bottom: 10px; margin-top: -25px;">
+        <img src="pictures/section_headline/menu.png" style="height: 75px; width: 90px;">
+        <p style="font-family: Roboto; font-size: 10px; margin-top: 1px;">all projects ; categorized </p>
+      </div>
+      <div class="section_basic_p">
+        <a href="https://meaculpaarchive.com/products">
+        products
+        </a>
+      </div>
+      <div class="section_basic_p">
+        <a href="https://meaculpaarchive.com/visuals">
+        visuals
+        </a>
+      </div>
+      <div class="section_basic_p">
+        <a href="https://meaculpaarchive.com/audio">
+        audio
+        </a>
+      </div>
+      <div class="section_basic_p">
+        <a href="https://meaculpaarchive.com/blog">
+        blog
+        </a>
+      </div>
+      <div class="section_basic_p">
+        <a href="https://meaculpaarchive.com/exhibitions">
+        exhibitions
+        </a>
+      </div>
+      <div class="section_basic_p">
+        <a href="https://meaculpaarchive.com/contact">
+        contact
+        </a>
+      </div>
+    </div>
+
+    <div class="split_body" style="margin-top: 20px;"> <!--space to make split--> </div>
+
+    <div class="section_headline" style="margin-top: 10px; height: 300px;">
+      <img src="pictures/section_headline/about.png" style="height: 100px; width: 100px;"">
+      <p style="font-family: Roboto; font-size: 10px; margin-top: -0.5px;">general info</p>
+      <div class="section_basic_p">
+        <p><u>mea culpa archive</u> is documenting the [mɛɑ kulpɑ] <i>artist collective</i> founded in stuttgart, germany, in 2022.</p>
+      </div>
+    </div>
+
+    <div class="split_body"> <!--space to make split--> </div>
+
+    <div class="bottom_signature">
+      <img src="pictures/header/mca_pronounciation.JPEG" style="height: 20px; margin-top: 20px;"
+      <div style="margin-top: 2px;">
+        <i style="font-family:'Times New Roman', Times, serif; font-size: 10px;">mea culpa archive</i>
+        <p style="margin-top: -1px;">contact@meaculpaarchive.com</p>
+      </div>
+    </div>
+  </body>
+</html>
