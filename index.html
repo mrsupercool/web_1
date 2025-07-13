@@ -3,34 +3,147 @@
   <head>
     <meta charset="utf-8" />
     <title>Mea Culpa Archive</title>
-    <link rel="icon" href="logo_nobg.PNG" type="image/x-icon">
-    <link rel="shortcut icon" href="logo_nobg.PNG" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
     <style>
-      .temp_v1 {
-        width: 300px;
-        height: 300px;
+      .top_bar {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 100px;
-      } 
-      .temp_v1_logo {
-        width: 75px;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+      }
+      .split {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5px;
+        background-color: rgb(231, 231, 231);
+        position: fixed;
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        height: 1px;
+      }
+      .split_body {
+        display: block;
+        background-color: rgb(231, 231, 231);
+        top: 10px;
+        left: 0px;
+        right: 0px;
+        height: 1px;
+      }
+      .header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+      }  
+      .section_headline {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+        color:rgb(100, 100, 100);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section_basic_p {
+        font-family: Roboto;
+        font-size: 10px;
+        color:rgb(100, 100, 100);
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+      }
+      .categories_section {
+        display: block;
+        margin-top: 30px;
+      }
+      .bottom_signature {
+        font-family: Roboto;
+        font-size: 8px;
+        color:rgb(150, 150, 150);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @media screen and (max-width: 768px) {
+        .product_container {
+          flex-direction: column;
+          align-items: center;
+        }
       }
       @media screen and (max-width: 767px) {
-        .temp_v1, .temp_v1_logo {
-          zoom: 130%;
+        .header, .split, .top_bar {
+          zoom: 70%;
+        }
+        @media screen and (max-width: 767px) {
+        .categories_section {
+          zoom: 40%;
         }
       }
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
-    <img class="temp_v1" src="MCA_web_1.png" alt="contact@meaculpaarchive.com">
-    <!-- ADD mca_web_temp_v1.jpeg TO SRC -->
-    <img class="temp_v1_logo" src="LOGO_ring_grey_5x5 Kopie.PNG" style="width: 50px; margin-top: -4px;">
-  </body>    
+  <body style="padding-top: 50px;">
+    <div class="top_bar"> <!--space to make split--> </div>
+    <div class="split"> <!--space to make split--> </div>
+    <div class="header" style="
+      display: flex; 
+      flex-direction: row;
+      margin-top: -30px;
+      justify-content: center;
+    ">
+      <div style="
+        display: flex; 
+        flex-direction: row;
+        margin-top: 30px;
+        justify-content: center;
+      ">
+        <div style="
+          flex: 1;
+        "> <!--space to make flex 1--> 
+        </div>
+        <div style="
+          width: 545px;
+        "> 
+          <img src="pictures/web-archiv_mca2025.png" style="height: 40px; margin-top: 5px;"> 
+        </div>
+        <div style="
+          flex: 1;
+        "> <!--space to make flex 1--> </div>
+      </div>
+    </div>
+
+    <div class="categories_section" style="height: 750px;">
+      <div class="section_basic_p">
+      <img src="pictures/betonblock_logo.PNG" style="height: 400px; margin-bottom:25px;">
+      </div>
+      <div class="section_basic_p">
+        <a href="https://meaculpaarchive.com/2025">
+          <img src="pictures/mca25.png" style="height: 100px; margin-top: 0px;">
+        </a>
+      </div>
+      <div class="section_basic_p">
+        <a href="https://meaculpaarchive.com/2024">
+          <img src="pictures/mca24.png" style="height: 85px; margin-top: 0px;">
+        </a>
+      </div>
+      <div class="section_basic_p">
+        <a href="https://meaculpaarchive.com/2023">
+          <img src="pictures/mca23.png" style="height: 70px; margin-top: 0px;">
+        </a>
+      </div>
+    </div>
+
+    <div class="split_body" style="margin-top: 20px;"> <!--space to make split--> </div>
+
+    <div class="bottom_signature">
+      <img src="pictures/mailadresse.png" style="height: 10px; margin-top: 20px;">
+      <img src="pictures/LOGO_ring_5x5.jpeg" style="height: 20px; margin-top: 5px;">
+      <div style="margin-top: 2px;">
+      </div>
+    </div>
+  </body>
 </html>
