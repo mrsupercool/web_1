@@ -70,6 +70,9 @@
         flex-direction: column;
         align-items: center;
       }
+      .space_section {
+        display: block;
+      }
       @media screen and (max-width: 768px) {
         .product_container {
           flex-direction: column;
@@ -80,9 +83,15 @@
         .header, .split, .top_bar {
           zoom: 60%;
         }
+      }
         @media screen and (max-width: 767px) {
         .categories_section {
           zoom: 30%;
+        }
+      }
+      @media screen and (min-width: 767px) {
+        .space_section {
+          zoom: 1%;
         }
       }
     </style>
@@ -138,6 +147,8 @@
         </a>
       </div>
     </div>
+
+    <div class="space_section" style="height: 400px;"> <!--space--> </div>
 
     <div class="split_body" style="margin-top: 20px;"> <!--space to make split--> </div>
 
