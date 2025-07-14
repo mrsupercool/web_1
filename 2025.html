@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mea Culpa Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="pictures/LOGO_ring_5x5.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="pictures/LOGO_ring_5x5.jpeg" type="image/x-icon">
+    <style>
+      .top_bar {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+      }
+      .split {
+        display: block;
+        background-color: rgb(231, 231, 231);
+        position: fixed;
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        height: 1px;
+      }
+      .split_body {
+        display: block;
+        background-color: rgb(231, 231, 231);
+        top: 10px;
+        left: 0px;
+        right: 0px;
+        height: 1px;
+      }
+      .header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+      }  
+      .section_headline {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+        color:rgb(100, 100, 100);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section_basic_p {
+        font-family: Roboto;
+        font-size: 10px;
+        color:rgb(100, 100, 100);
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+      }
+      .categories_section {
+        display: block;
+        margin-top: 30px;
+      }
+      .bottom_signature {
+        font-family: Roboto;
+        font-size: 8px;
+        color:rgb(150, 150, 150);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .space_section {
+        display: block;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .product_container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .header, .split, .top_bar {
+          zoom: 60%;
+        }
+      }
+        @media screen and (max-width: 1000px) {
+        .categories_section {
+          zoom: 30%;
+        }
+      }
+      @media screen and (min-width: 1000px) {
+        .space_section {
+          zoom: 50%;
+        }
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body style="padding-top: 50px;">
+    <div class="top_bar"> <!--space to make split--> </div>
+    <div class="split"> <!--space to make split--> </div>
+    <div class="header" style="
+      display: flex; 
+      flex-direction: row;
+      margin-top: -30px;
+      justify-content: center;
+    ">
+      <div style="
+        display: flex; 
+        flex-direction: row;
+        margin-top: 30px;
+        justify-content: center;
+      ">
+        <div style="
+          flex: 1;
+        "> <!--space to make flex 1--> 
+        </div>
+        <div style="
+          width: 545px;
+        "> 
+        <a href="https://meaculpaarchive.com">
+          <img src="pictures/web-archiv_mca2025.png" style="height: 40px; margin-top: 5px;"> 
+        </a>
+        </div>
+        <div style="
+          flex: 1;
+        "> <!--space to make flex 1--> </div>
+      </div>
+    </div>
+
+    <div class="categories_section" style="height: 1000px;">
+        <div class="section_basic_p">
+          <img src="pictures/Juni_25.png" style="height: 90px;">
+        </div>
+        <div class="section_basic_p" style="flex-direction: column; margin-top: 45px;">
+          <img id="bild" src="Hausarbeit25_E-READER/Hausarbeit25_E-READER.1.jpeg" style="max-height: 900px; width: auto;">
+        
+          <div style="margin-top: 20px;">
+            <button onclick="zurueck()" style="padding: 5px 15px; background-color: white; border: white;"> <img src="pictures/pfeil.png" style="height: 100px; transform: scaleX(-1);"> </button>
+            <button onclick="weiter()" style="padding: 5px 15px; background-color: white; border: white;"> <img src="pictures/pfeil.png" style="height: 100px;"> </button>
+          </div>
+        
+          <div id="seiteninfo" style="margin-top: 10px; font-family: Roboto; font-size: 10px; color:rgb(100, 100, 100);">
+            Seite 1 von 32
+          </div>
+        </div>
+    </div>
+  
+    <div class="space_section" style="height: 400px;"> <!--space--> </div>
+
+    <div class="split_body" style="margin-top: 20px;"> <!--space to make split--> </div>
+
+    <div class="bottom_signature" style="height: 100px;">
+      <img src="pictures/mailadresse.png" style="height: 10px; margin-top: 20px;">
+      <img src="pictures/LOGO_ring_5x5.jpeg" style="height: 20px; margin-top: 5px;">
+      <div style="margin-top: 2px;"></div>
+    </div>
+
+    <script>
+      const totalBilder = 32;
+      let aktuellesBild = 1;
+    
+      function updateBild() {
+        const bild = document.getElementById("bild");
+        const seiteninfo = document.getElementById("seiteninfo");
+    
+        bild.src = `Hausarbeit25_E-READER/Hausarbeit25_E-READER.${aktuellesBild}.jpeg`;
+        bild.alt = `Seite ${aktuellesBild}`;
+        seiteninfo.textContent = `Seite ${aktuellesBild} von ${totalBilder}`;
+      }
+    
+      function weiter() {
+        aktuellesBild = (aktuellesBild % totalBilder) + 1;
+        updateBild();
+      }
+    
+      function zurueck() {
+        aktuellesBild = (aktuellesBild - 2 + totalBilder) % totalBilder + 1;
+        updateBild();
+      }
+    </script>
+
+  </body>
+</html>
