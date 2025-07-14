@@ -58,6 +58,17 @@
         align-items: center;
         justify-content: center;
       }
+
+      .section_gallery {
+        font-family: Roboto;
+        font-size: 10px;
+        color:rgb(100, 100, 100);
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+      }
+
       .categories_section {
         display: block;
         margin-top: 30px;
@@ -95,6 +106,12 @@
           zoom: 50%;
         }
       }
+      @media screen and (min-width: 1000px) {
+        .section_gallery {
+          zoom: 40%;
+        }
+      }
+
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -130,12 +147,12 @@
       </div>
     </div>
 
-    <div class="categories_section" style="height: 1000px;">
+    <div class="categories_section" style="height: 750px;">
         <div class="section_basic_p">
           <img src="pictures/Juni_25.png" style="height: 90px;">
         </div>
-        <div class="section_basic_p" style="flex-direction: column; margin-top: 45px;">
-          <img id="bild" src="Hausarbeit25_E-READER/Hausarbeit25_E-READER.1.jpeg" style="max-height: 900px; width: auto;">
+        <div class="section_gallery" style="flex-direction: column; margin-top: 45px;">
+          <img id="bild" src="Hausarbeit25_E-READER/Hausarbeit25_E-READER.1.jpeg" style="max-height: 1500px; width: auto;">
         
           <div style="margin-top: 20px;">
             <button onclick="zurueck()" style="padding: 5px 15px; background-color: white; border: white;"> <img src="pictures/pfeil.png" style="height: 100px; transform: scaleX(-1);"> </button>
@@ -148,7 +165,7 @@
         </div>
     </div>
   
-    <div class="space_section" style="height: 400px;"> <!--space--> </div>
+    <div class="space_section" style="height: 500px;"> <!--space--> </div>
 
     <div class="split_body" style="margin-top: 20px;"> <!--space to make split--> </div>
 
